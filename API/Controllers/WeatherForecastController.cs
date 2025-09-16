@@ -1,4 +1,5 @@
 using Domain; // Use the WeatherForecast model from Domain project
+using Persistence;
 using Microsoft.AspNetCore.Mvc; // Provides attributes and base classes for APIs
 
 namespace API.Controllers;
@@ -8,6 +9,8 @@ namespace API.Controllers;
 
 // Sets the route: [controller] becomes "WeatherForecast"
 [Route("[controller]")]
+
+
 public class WeatherForecastController : ControllerBase
 {
     // Static list of weather descriptions
@@ -20,14 +23,41 @@ public class WeatherForecastController : ControllerBase
     // Logger to record information or errors
     private readonly ILogger<WeatherForecastController> _logger;
 
+    private readonly DataContext _context;
+
     // Constructor: ASP.NET automatically injects a logger when it creates this controller
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, DataContext context)
     {
         _logger = logger; // store logger in a private field
+        _context = context;
     }
 
-    // Responds to GET requests at /WeatherForecast
-    [HttpGet(Name = "GetWeatherForecast")]
+    // // Responds to GET requests at /WeatherForecast
+    // [HttpGet(Name = "GetWeatherForecast")]
+
+    [HttpPost]
+    public ActionResult<WeatherForecast> Create(){
+        Console.WriteLine($"Database path: {_context.DbPath}");
+        Console.WriteLine("Insert a new WeatherForecast");
+
+        var forecast = new WeatherForecast(){
+            Date = new DateOnly(),
+            TemperatureC = 75,
+            Summary = "Warm"
+        };
+
+        _context.WeatherForecasts.Add(forecast);
+        var success = _context.SaveChanges() > 0;
+
+        if (success)
+        {
+            return forecast;
+        }
+
+        throw new Exception("Error creating WeatherForecast");
+
+    }
+
     public IEnumerable<WeatherForecast> Get()
     {
         // Generate 5 random forecasts
