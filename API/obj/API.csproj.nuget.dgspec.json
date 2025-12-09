@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/aisha/Documents/matc/itdev162/aisha-kabir/API/API.csproj": {}
+    "/Users/abdul/aisha-kabir/API/API.csproj": {}
   },
   "projects": {
-    "/Users/aisha/Documents/matc/itdev162/aisha-kabir/API/API.csproj": {
+    "/Users/abdul/aisha-kabir/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/API/API.csproj",
+        "projectUniqueName": "/Users/abdul/aisha-kabir/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/API/API.csproj",
-        "packagesPath": "/Users/aisha/.nuget/packages/",
-        "outputPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/API/obj/",
+        "projectPath": "/Users/abdul/aisha-kabir/API/API.csproj",
+        "packagesPath": "/Users/abdul/.nuget/packages/",
+        "outputPath": "/Users/abdul/aisha-kabir/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/aisha/.nuget/NuGet/NuGet.Config"
+          "/Users/abdul/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -26,8 +26,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Application/Application.csproj": {
-                "projectPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Application/Application.csproj"
+              "/Users/abdul/aisha-kabir/Application/Application.csproj": {
+                "projectPath": "/Users/abdul/aisha-kabir/Application/Application.csproj"
               }
             }
           }
@@ -54,11 +54,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.10, )"
             }
           },
           "imports": [
@@ -80,21 +86,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Application/Application.csproj": {
+    "/Users/abdul/aisha-kabir/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Application/Application.csproj",
+        "projectUniqueName": "/Users/abdul/aisha-kabir/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Application/Application.csproj",
-        "packagesPath": "/Users/aisha/.nuget/packages/",
-        "outputPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Application/obj/",
+        "projectPath": "/Users/abdul/aisha-kabir/Application/Application.csproj",
+        "packagesPath": "/Users/abdul/.nuget/packages/",
+        "outputPath": "/Users/abdul/aisha-kabir/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/aisha/.nuget/NuGet/NuGet.Config"
+          "/Users/abdul/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -106,11 +112,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Domain/Domain.csproj": {
-                "projectPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Domain/Domain.csproj"
+              "/Users/abdul/aisha-kabir/Domain/Domain.csproj": {
+                "projectPath": "/Users/abdul/aisha-kabir/Domain/Domain.csproj"
               },
-              "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Persistence/Persistence.csproj": {
-                "projectPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Persistence/Persistence.csproj"
+              "/Users/abdul/aisha-kabir/Persistence/Persistence.csproj": {
+                "projectPath": "/Users/abdul/aisha-kabir/Persistence/Persistence.csproj"
               }
             }
           }
@@ -146,21 +152,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Domain/Domain.csproj": {
+    "/Users/abdul/aisha-kabir/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/abdul/aisha-kabir/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Domain/Domain.csproj",
-        "packagesPath": "/Users/aisha/.nuget/packages/",
-        "outputPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Domain/obj/",
+        "projectPath": "/Users/abdul/aisha-kabir/Domain/Domain.csproj",
+        "packagesPath": "/Users/abdul/.nuget/packages/",
+        "outputPath": "/Users/abdul/aisha-kabir/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/aisha/.nuget/NuGet/NuGet.Config"
+          "/Users/abdul/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -205,21 +211,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Persistence/Persistence.csproj": {
+    "/Users/abdul/aisha-kabir/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Persistence/Persistence.csproj",
+        "projectUniqueName": "/Users/abdul/aisha-kabir/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Persistence/Persistence.csproj",
-        "packagesPath": "/Users/aisha/.nuget/packages/",
-        "outputPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Persistence/obj/",
+        "projectPath": "/Users/abdul/aisha-kabir/Persistence/Persistence.csproj",
+        "packagesPath": "/Users/abdul/.nuget/packages/",
+        "outputPath": "/Users/abdul/aisha-kabir/Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/aisha/.nuget/NuGet/NuGet.Config"
+          "/Users/abdul/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -231,8 +237,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Domain/Domain.csproj": {
-                "projectPath": "/Users/aisha/Documents/matc/itdev162/aisha-kabir/Domain/Domain.csproj"
+              "/Users/abdul/aisha-kabir/Domain/Domain.csproj": {
+                "projectPath": "/Users/abdul/aisha-kabir/Domain/Domain.csproj"
               }
             }
           }
@@ -255,7 +261,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -265,7 +271,7 @@
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.10, )"
             }
           },
           "imports": [
@@ -284,7 +290,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
