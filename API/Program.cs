@@ -1,8 +1,12 @@
+using Stripe;
 using Persistence;
 
 // Create a WebApplication builder object.
 // This sets up configuration, logging, and the services container.
 var builder = WebApplication.CreateBuilder(args);
+
+// Configure Stripe API key
+StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
 // Add CORS services
 builder.Services.AddCors(options =>
