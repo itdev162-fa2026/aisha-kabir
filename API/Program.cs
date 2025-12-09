@@ -21,7 +21,17 @@ builder.Services.AddCors(options =>
 builder.Services.AddOpenApi();
 
 // Add support for controller-based APIs.
-builder.Services.AddControllers();
+// Add services to the container.
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+    })
+    .ConfigureApiBehaviorOptions(options =>
+    {
+        // Disable automatic 400 response so we can return 422 for validation errors
+        options.SuppressModelStateInvalidFilter = true;
+    });
 builder.Services.AddDbContext<DataContext>();
 
 // Build the WebApplication object from the configured builder.
