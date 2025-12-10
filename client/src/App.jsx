@@ -6,6 +6,7 @@ import CartButton from "./components/Cart/CartButton";
 import Cart from "./components/Cart/Cart";
 import Checkout from "./components/Checkout/Checkout";
 import OrderSuccess from "./components/Checkout/OrderSuccess";
+import CheckoutCancelled from "./components/Checkout/CheckoutCancelled";
 import './App.css';
 
 function App() {
@@ -132,7 +133,9 @@ function App() {
                 />
               }
             />
-            <Route path="/order/success" element={<OrderSuccess />} />
+            // Clear cart from React state. This was missing and was causing issues with cart showing items after payment
+            <Route path="/order/success" element={<OrderSuccess clearCart={clearCart} />} />
+            <Route path="/checkout/cancelled" element={<CheckoutCancelled />} />
           </Routes>
         </main>
 
